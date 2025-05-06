@@ -1,0 +1,3 @@
+url: https://drive.google.com/file/d/1mBV8QwbXxo5SvLjpVU0ndFnf7sTfrjD0/view?usp=sharing
+
+md5sum: 4fa1e2279c8a91645f8ffe8170f7a462  ce441-hw2-2.mkv

