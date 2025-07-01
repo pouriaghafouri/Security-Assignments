@@ -1,0 +1,9 @@
+ce441-hw1-1.mkv: https://drive.google.com/file/d/1FrUX75UOJDVGpGi0EUBEj2RQnEA8NJm8/view?usp=sharing
+ce441-hw1-2.mkv: https://drive.google.com/file/d/18XBaIWENqUkLXJN0QdPbLbYWrJlwd-lN/view?usp=sharing
+ce441-hw1-3.mkv: https://drive.google.com/file/d/1CBIWH21UVHidyOxYWV8okaJklC8xLKlo/view?usp=sharing
+ce441-hw1-4.mkv: https://drive.google.com/file/d/1Bs-Zvci9ReTnc6PMu4VIANUw6HLPFK6o/view?usp=sharing
+
+md5sum ce441-hw1-1.mkv: ab2eab156444a74b5eedb03f69d59d29
+md5sum ce441-hw1-2.mkv: 98b03b65460d0e2d4b697e6f6a957fda
+md5sum ce441-hw1-3.mkv: fe2f0b6c18d31e843e5a41b48089bd03
+md5sum ce441-hw1-4.mkv: b0a93174e4e9cdc74dad02c3a7a95980
